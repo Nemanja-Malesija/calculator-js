@@ -80,7 +80,7 @@ operations.forEach((el) =>
 
 btnEqual.addEventListener('click', function (e) {
   const resultEqual = operate(secondNum, firstNum, operator);
-  outputSecondary.textContent = `${resultEqual} ${operator}`;
+  outputSecondary.textContent = `${secondNum} ${operator} ${firstNum} = ${resultEqual} `;
   outputMain.textContent = '0';
   enableOperator();
   console.log(firstNum, secondNum);

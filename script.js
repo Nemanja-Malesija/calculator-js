@@ -54,6 +54,16 @@ numbers.forEach((el) =>
 
     firstNum = +outputMain.textContent;
     enableOperator();
+    if (firstNum.toString().length > 9) {
+      alert("You can't input a number containing more than 9 digits!");
+      firstNum = '';
+      secondNum = '';
+      operator = '';
+      result = '';
+      outputMain.textContent = '0';
+      outputSecondary.textContent = '';
+      btnDot.removeAttribute('disabled');
+    }
   })
 );
 
@@ -71,6 +81,7 @@ operations.forEach((el) =>
     } else {
       operator.length != 0;
       result = operate(secondNum, firstNum, operator);
+      result = result.toFixed(2);
       operator = e.target.dataset.operation;
       secondNum = result;
       outputMain.textContent = '0';
@@ -81,6 +92,7 @@ operations.forEach((el) =>
 
 btnEqual.addEventListener('click', function (e) {
   result = operate(secondNum, firstNum, operator);
+  result = result.toFixed(2);
 
   outputSecondary.textContent = `${secondNum} ${operator} ${firstNum} = ${result} `;
 
@@ -90,6 +102,7 @@ btnEqual.addEventListener('click', function (e) {
   btnDot.removeAttribute('disabled');
 
   if (firstNum === 0 && operator === '/') alert("You can't divide by 0");
+  if (secondNum === '') outputSecondary.textContent = '';
 });
 
 btnClear.addEventListener('click', function (e) {

@@ -27,14 +27,23 @@ body {
   gap: 0.8rem;
 }
 
-.btn {
+.btn,
+.btn:visited {
   padding: 2rem;
   text-align: center;
   font-size: 3rem;
   color: #333;
   border: 1px solid #333;
   background-color: #f8f9fa;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #e6e6e6;
+}
+
+.btn:active {
+  background-color: #cccccc;
 }
 
 .display {
@@ -50,6 +59,7 @@ body {
   text-align: right;
   font-size: 4.5rem;
   padding: 2rem 1rem 0.2rem 1rem;
+  background-color: #fff;
 }
 .output__main {
   height: 7rem;
@@ -65,7 +75,22 @@ body {
   background-color: #41c69e;
 }
 
+.btn__clear:hover {
+  background-color: #3bb28e;
+}
+.btn__clear:active {
+  background-color: #349e7e;
+}
+
 .btn__delete {
   grid-column: span 2;
   background-color: #f03e3e;
+}
+
+.btn__delete:hover {
+  background-color: #d83838;
+}
+
+.btn__delete:active {
+  background-color: #c03232;
 }

@@ -18,4 +18,4 @@ operator = ""
 // Store again firstNum from the display
 // At this point firstNum, secondNum and operator have correct values. => perform operation => store in variable result => store in secondNum so that once operation is finished, the next one can be chained on the result of the previous one
 
-Had real fun with this project. A lot of edge cases to pay attention to, once basic functionality is implemented
+Had real fun with this project! A lot of edge cases to pay attention to, once basic functionality is implemented.

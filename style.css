@@ -53,19 +53,19 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.current-operand,
-.previous-operand {
+.output-main,
+.output-secondary {
   border: none;
   text-align: right;
   font-size: 4.5rem;
   padding: 2rem 1rem 0.2rem 1rem;
   background-color: #fff;
 }
-.current-operand {
+.output-main {
   height: 7rem;
 }
 
-.previous-operand {
+.output-secondary {
   font-size: 2rem;
   height: 4rem;
 }

@@ -90,6 +90,7 @@ class Calculator {
 
 const calculator = new Calculator(outputMain, outputSecondary);
 
+// event listeners
 numbers.forEach((num) =>
   num.addEventListener('click', function () {
     calculator.appendNumber(num.textContent);
